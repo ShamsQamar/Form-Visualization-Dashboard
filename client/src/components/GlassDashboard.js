@@ -72,7 +72,7 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
         <div className='content'>
           <h2>I'm {DashUser.name}</h2>
           <p>{DashUser.role}</p>
-          <a href='/#'>About Me</a>
+          <a href='https://www.linkedin.com/in/shams-qamar-703a21212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='blank'>About Me</a>
         </div>
 
 
@@ -82,7 +82,7 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
           <li><a href='/#'><i className="fa-brands fa-instagram"></i></a></li>
         </ul>
         <div className='copyrightText'>2023 All rights are reserved. Designed & developed by
-          <a href='/#'> Shams</a>
+          <a href='https://github.com/ShamsQamar?tab=repositories' target='blank'> Shams</a>
         </div>
 
 

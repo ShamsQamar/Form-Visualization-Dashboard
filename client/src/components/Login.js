@@ -14,6 +14,8 @@ const Login = ({ setDashUser, DashUser }) => {
     // console.log({ res })
     if (res.data.message === 'Invalid Credentials') {
       alert('Invalid Credentials');
+      setEmail('');
+      setPassword('');
     }
     else {
       alert('Welcome Back!');
