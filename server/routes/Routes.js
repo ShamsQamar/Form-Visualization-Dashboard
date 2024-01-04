@@ -14,9 +14,8 @@ route.get('/getusers', async (req, res) => {
     }
 });
 
-route.get('/test', (req, res) => {
-    res.cookie('test', "testingcookie")
-    res.json({ message: "testing cookies to work" });
+route.get('/', (req, res) => {
+    res.json({ message: "Welcome to the server" });
 })
 
 route.post('/register', async (req, res) => {
