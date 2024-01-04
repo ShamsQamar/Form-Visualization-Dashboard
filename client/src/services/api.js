@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const URL = 'http://localhost:5000';  // using proxy in package.json to avaoid cors policy error
-
+axios.defaults.withCredentials = true;
 export const registerUser = async ( user ) => {
    try {
     return await axios.post('/register', user);
