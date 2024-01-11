@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const URL = 'https://form-dashboard-backend.vercel.app/';  // using proxy in package.json to avaoid cors policy error
-
+// const URL = 'http://localhost:5000';  // using proxy in package.json to avaoid cors policy error
+axios.defaults.withCredentials = true;
 export const registerUser = async ( user ) => {
    try {
     return await axios.post(`${URL}/register`, user);

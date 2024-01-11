@@ -2,6 +2,10 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
+=======
+  "proxy": "https://form-dashboard-backend.vercel.app",
+>>>>>>> b07b74bbcf5cb4be0d1892b2f6bb5a0a6cec12aa
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
