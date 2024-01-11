@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Form from "./components/Form";
 import GlassDashboard from "./components/GlassDashboard";
-import DisplayPie from "./components/Charts/DisplayPie";
 
 
 const App = () => {

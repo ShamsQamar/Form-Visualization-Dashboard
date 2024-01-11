@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-// const URL = 'http://localhost:5000';  // using proxy in package.json to avaoid cors policy error
+const URL = 'https://form-dashboard-backend.vercel.app/';  // using proxy in package.json to avaoid cors policy error
 
 export const registerUser = async ( user ) => {
    try {
-    return await axios.post('/register', user);
+    return await axios.post(`${URL}/register`, user);
    } catch (error) {
     console.log('error while calling registerUser',error);
    }
@@ -12,7 +12,7 @@ export const registerUser = async ( user ) => {
 
 export const loginUser = async ( data ) => {
   try {
-    return await axios.post('/signin', data);
+    return await axios.post(`${URL}/signin`, data);
   } catch (error) {
     console.log('error while calling loginUser',error);
   }
@@ -20,7 +20,7 @@ export const loginUser = async ( data ) => {
 
 export const getUsers = async () => {
   try {
-    let response = await axios.get('/getusers');
+    let response = await axios.get(`${URL}/getUsers`);
     return response.data;
   } catch (error) {
     console.log('error while calling getUsers',error);

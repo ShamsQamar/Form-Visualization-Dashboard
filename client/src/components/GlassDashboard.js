@@ -53,10 +53,10 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
     <section>
       <div className='Container'>
         <header>
-          <a href='/#' className='logo'>Profile</a>
+          <a href='' className='logo'>Profile</a>
           <ul className='nav'>
-            <li><a href='/#' className='active'>Home</a></li>
-            <li><a href='/#'>Projects</a></li>
+            <li><a href='/' className='active'>Home</a></li>
+            <li><a href='https://github.com/ShamsQamar?tab=repositories'>Projects</a></li>
             <li>
               <select className='select' onChange={(e) => setChartType(e.target.value)}>
                 <option className='option' value='line'>line</option>
@@ -77,9 +77,9 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
 
 
         <ul className='sci'>
-          <li><a href='/#'><i className="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href='/#'><i className="fa-brands fa-twitter"></i></a></li>
-          <li><a href='/#'><i className="fa-brands fa-instagram"></i></a></li>
+          <li><a href='https://www.facebook.com/' target='blank'><i className="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href='https://twitter.com/' target='blank'><i className="fa-brands fa-twitter"></i></a></li>
+          <li><a href='https://www.instagram.com/?login&hl=en-gb' target='blank'><i className="fa-brands fa-instagram"></i></a></li>
         </ul>
         <div className='copyrightText'>2023 All rights are reserved. Designed & developed by
           <a href='https://github.com/ShamsQamar?tab=repositories' target='blank'> Shams</a>
