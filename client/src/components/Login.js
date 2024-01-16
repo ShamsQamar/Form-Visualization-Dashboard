@@ -11,7 +11,7 @@ const Login = ({ setDashUser, DashUser }) => {
   const handleSumbit = async (e) => {
     e.preventDefault();
     let res = await loginUser({ email: email, password: password });
-    // console.log({ res })
+      //  console.log("res",{ res })
     if (res.data.message === 'Invalid Credentials') {
       alert('Invalid Credentials');
       setEmail('');

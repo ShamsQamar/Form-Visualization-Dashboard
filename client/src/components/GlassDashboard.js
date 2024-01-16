@@ -55,7 +55,7 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
         <header>
           <a href='' className='logo'>Profile</a>
           <ul className='nav'>
-            <li><a href='/' className='active'>Home</a></li>
+            <li><a href='' className='active'>Home</a></li>
             <li><a href='https://github.com/ShamsQamar?tab=repositories'>Projects</a></li>
             <li>
               <select className='select' onChange={(e) => setChartType(e.target.value)}>
