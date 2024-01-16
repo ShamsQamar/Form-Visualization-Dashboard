@@ -13,9 +13,19 @@ app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true})) 
+<<<<<<< HEAD
 
 const Username = process.env.MONGO_USER;
 const Password = process.env.MONGO_PASSWORD;
+=======
+app.use(cors(
+  {
+        origin: ["https://form-dashboard-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+>>>>>>> 745e25a0a34f771e4050bac0f5142420c0b3f728
 const Port = process.env.PORT;
 
 const Connection = async () => {
