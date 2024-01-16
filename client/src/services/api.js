@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:5000';  // using proxy in package.json to avaoid cors policy error
+const URL = 'https://form-dashboard-backend.cyclic.app';  // using proxy in package.json to avaoid cors policy error
 
 export const registerUser = async ( user ) => {
    try {
