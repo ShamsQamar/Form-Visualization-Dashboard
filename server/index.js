@@ -10,13 +10,12 @@ const app = Express();
 dotenv.config();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true})) 
-app.use(cors(
-    {
-        origin: ["https://form-dashboard-frontend.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors());
+ // {
+ //        origin: ["https://form-dashboard-frontend.vercel.app"],
+ //        methods: ["POST", "GET"],
+ //        credentials: true
+ //    }
 const Port = process.env.PORT;
 app.use('/',Routes);
 
